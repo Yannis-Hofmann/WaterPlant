@@ -4,6 +4,10 @@ import network
 from machine import Pin, ADC
 from umqtt.simple import MQTTClient
 
+# Disclaimer: We've used GitHub Copilot to help with generating boilerplate code and for debugging purposes. 
+# Used 3rd party libraries: 
+# umqtt.simple for MQTT communication (https://pypi.org/project/micropython-umqtt.simple/)
+
 # --- Configuration ---
 # Wi-Fi Credentials
 WIFI_SSID = "hpi_event"
@@ -11,8 +15,7 @@ WIFI_PASSWORD = "noum-zuct-TIY"
 
 MQTT_BROKER_IP = "ctf.ythofmann.de" 
 MQTT_PORT = 1883
-
-# This ID should be unique for each Pico
+# MQTT Client ID
 PICO_ID = "LivingRoom" 
 
 # Publishing topics

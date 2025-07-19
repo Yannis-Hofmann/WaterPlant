@@ -4,6 +4,12 @@ import time
 from flask import Flask, jsonify, render_template_string
 import paho.mqtt.client as mqtt
 
+# Disclaimer: We've used GitHub Copilot to help with generating boilerplate code and for debugging purposes. 
+# Used 3rd party libraries: 
+# chart.js for charting (https://www.chartjs.org/)
+# Flask for web server (https://pypi.org/project/Flask/)
+# paho-mqtt for MQTT communication (https://pypi.org/project/paho-mqtt/)
+
 # --- Configuration ---
 MQTT_BROKER_IP = "localhost"
 MQTT_PORT = 1883
